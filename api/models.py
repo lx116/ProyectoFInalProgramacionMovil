@@ -13,6 +13,10 @@ class Category(models.Model):
 class Product(models.Model):
     name = models.CharField(max_length=50, null=True)
     price = models.FloatField(null=True)
+    image = models.ImageField(null=True)
+    
+    def __str(self):
+        return self.name
 
 
 class Stock(models.Model):
